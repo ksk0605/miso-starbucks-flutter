@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:miso_starbucks/starbucks_first.dart';
+import 'package:miso_starbucks/starbucks_second.dart';
 
 /// Starbucks 메인 색상
 Color starbucksPrimaryColor = Color.fromARGB(255, 83, 184, 138);
@@ -52,72 +54,6 @@ class _StarbucksState extends State<Starbucks> {
           BottomNavigationBarItem(icon: Icon(Icons.redeem), label: ""),
           BottomNavigationBarItem(icon: Icon(Icons.more_horiz), label: ""),
         ],
-      ),
-    );
-  }
-}
-
-/// 첫 번째 페이지
-class StarbucksFirstPage extends StatelessWidget {
-  const StarbucksFirstPage({Key? key}) : super(key: key);
-
-  /// 배경 이미지 URL
-  final String backImg =
-      "https://i.ibb.co/2Pz33q7/2021-12-16-12-21-42-cleanup.png";
-
-  /// Frequency 이미지 URL
-  final String frequencyImg = "https://i.ibb.co/QcVn97y/2021-12-16-1-33-11.png";
-
-  /// 추천 메뉴
-  final List<Map<String, String>> recommendMenu = const [
-    {
-      "name": "돌체쿠키라떼",
-      "imgUrl": "https://i.ibb.co/SwGPpzR/9200000003687-20211118142543832.jpg",
-    },
-    {
-      "name": "아이스 홀리데이 돌체 쿠키 라떼",
-      "imgUrl": "https://i.ibb.co/JHVXZ72/9200000003690-20211118142702357.jpg",
-    },
-    {
-      "name": "스노우 민트 초콜릿",
-      "imgUrl": "https://i.ibb.co/M91G17c/9200000003693-20211118142933650.jpg",
-    },
-    {
-      "name": "아이스 스노우 민트 초콜릿",
-      "imgUrl": "https://i.ibb.co/jyZK4C9/9200000003696-20211118143125337.jpg",
-    },
-    {
-      "name": "스노우 민트 초콜릿 블렌디드",
-      "imgUrl": "https://i.ibb.co/DKkV0rw/9200000003699-20211118143249044.jpg",
-    },
-  ];
-
-  /// 크리스마스 이벤트 이미지 URL
-  final String eventImg = "https://i.ibb.co/Fb0q43T/IMG-F9-BA5-CBCB476-1.jpg";
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: Center(
-        child: Text("Starbucks 첫 번째 페이지"),
-      ),
-    );
-  }
-}
-
-/// 두 번째 페이지
-class StarbucksSecondPage extends StatelessWidget {
-  const StarbucksSecondPage({Key? key}) : super(key: key);
-
-  /// 카드 이미지
-  final String cardImgUrl = "https://i.ibb.co/BgfYHg4/2021-12-16-1-49-51.png";
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text("Starbucks 두 번째 페이지"),
       ),
     );
   }
