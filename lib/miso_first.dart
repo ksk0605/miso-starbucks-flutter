@@ -49,14 +49,14 @@ class MisoFirstPage extends StatelessWidget {
                 icon: Icon(
                   Icons.add,
                   size: 30,
-                  color: Color(0xff1D4CEC),
+                  color: Color.fromARGB(255, 38, 103, 240),
                 ),
                 label: Text(
                   "예약하기",
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xff1D4CEC),
+                    color: Color.fromARGB(255, 38, 103, 240),
                   ),
                 ),
               ),
@@ -65,7 +65,7 @@ class MisoFirstPage extends StatelessWidget {
             Container(
               padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
               decoration: BoxDecoration(
-                color: Color(0xff4170F2),
+                color: Color.fromARGB(255, 38, 103, 240),
                 borderRadius: BorderRadius.all(Radius.circular(3)),
               ),
               child: TextButton(
