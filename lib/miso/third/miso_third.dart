@@ -1,5 +1,5 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:miso_starbucks/miso/common/data/color.dart';
 
 /// 세 번째 페이지
 class MisoThirdPage extends StatelessWidget {
@@ -16,7 +16,7 @@ class MisoThirdPage extends StatelessWidget {
           width: double.infinity,
           height: double.infinity,
           decoration: BoxDecoration(
-            color: Color(0xff1E4CEB),
+            color: misoPrimaryColor,
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -93,14 +93,14 @@ class MisoThirdPage extends StatelessWidget {
                       icon: Icon(
                         Icons.redeem,
                         size: 30,
-                        color: Color(0xff1D4CEC),
+                        color: misoPrimaryColor,
                       ),
                       label: Text(
                         "친구 추천하기",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
-                          color: Color(0xff1D4CEC),
+                          color: misoPrimaryColor,
                         ),
                       ),
                     ),

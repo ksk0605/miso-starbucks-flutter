@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:miso_starbucks/starbucks/common/data/color.dart';
 
 /// 세 번째 페이지
 class StarbucksThirdPage extends StatelessWidget {
@@ -59,7 +60,7 @@ class StarbucksThirdPage extends StatelessWidget {
               Tab(text: '나만의 메뉴'),
               Tab(text: '🎂 홀케이크'),
             ],
-            indicatorColor: Color.fromARGB(255, 83, 184, 138),
+            indicatorColor: starbucksPrimaryColor,
             labelColor: Colors.black,
             unselectedLabelColor: Colors.grey,
           ),

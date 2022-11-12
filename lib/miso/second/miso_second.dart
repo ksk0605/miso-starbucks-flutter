@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:miso_starbucks/miso/common/data/color.dart';
 
 /// 두 번째 페이지
 class MisoSecondPage extends StatelessWidget {
@@ -34,7 +35,7 @@ class MisoSecondPage extends StatelessWidget {
               children: [
                 Icon(
                   Icons.error,
-                  color: Color(0xff1D4CEC),
+                  color: misoPrimaryColor,
                 ),
                 Text(
                   '    예약된 서비스가 아직 없어요. 지금 예약해보세요!',
@@ -50,7 +51,7 @@ class MisoSecondPage extends StatelessWidget {
               width: double.infinity,
               padding: EdgeInsets.fromLTRB(2, 0, 2, 0),
               decoration: BoxDecoration(
-                color: Color(0xff4170F2),
+                color: misoPrimaryColor,
                 borderRadius: BorderRadius.all(Radius.circular(3)),
               ),
               child: TextButton(

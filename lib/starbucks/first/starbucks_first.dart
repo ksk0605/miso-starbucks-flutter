@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:miso_starbucks/starbucks/common/data/color.dart';
 
 /// 첫 번째 페이지
 class StarbucksFirstPage extends StatelessWidget {
@@ -86,7 +87,7 @@ class StarbucksFirstPage extends StatelessWidget {
                               Text(
                                 '11 ★ until next Reward',
                                 style: TextStyle(
-                                  color: Color.fromARGB(255, 199, 176, 121),
+                                  color: starbucksAccentColor,
                                   fontSize: 17,
                                   fontWeight: FontWeight.w800,
                                 ),
@@ -103,7 +104,7 @@ class StarbucksFirstPage extends StatelessWidget {
                                   child: LinearProgressIndicator(
                                     value: 0.25,
                                     valueColor: AlwaysStoppedAnimation<Color>(
-                                        Color.fromARGB(255, 199, 176, 121)),
+                                        starbucksAccentColor),
                                     backgroundColor: Color(0xffD6D6D6),
                                   ),
                                 ),
@@ -131,7 +132,7 @@ class StarbucksFirstPage extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
-                              color: Color.fromARGB(255, 199, 176, 121),
+                              color: starbucksAccentColor,
                             ),
                           )
                         ],
@@ -197,20 +198,6 @@ class StarbucksFirstPage extends StatelessWidget {
               ),
             ),
           ),
-          // SliverList(
-          //   delegate: SliverChildBuilderDelegate(
-          //     (BuildContext context, int index) {
-          //       return Container(
-          //         color: index.isOdd ? Colors.white : Colors.black12,
-          //         height: 100.0,
-          //         child: Center(
-          //           child: Text('$index', textScaleFactor: 5),
-          //         ),
-          //       );
-          //     },
-          //     childCount: 20,
-          //   ),
-          // ),
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.all(10.0),
@@ -234,7 +221,7 @@ class StarbucksFirstPage extends StatelessWidget {
                         Text(
                           '스벅충',
                           style: TextStyle(
-                            color: Color.fromARGB(255, 199, 176, 121),
+                            color: starbucksAccentColor,
                             fontWeight: FontWeight.bold,
                             fontSize: 29,
                           ),

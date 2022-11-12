@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:miso_starbucks/miso/common/data/color.dart';
 
-import 'miso_first.dart';
-import 'miso_fourth.dart';
-import 'miso_second.dart';
-import 'miso_third.dart';
-
-/// Miso 메인 색상
-Color misoPrimaryColor = Color.fromARGB(255, 38, 103, 240);
+import '../../first/miso_first.dart';
+import '../../fourth/miso_fourth.dart';
+import '../../second/miso_second.dart';
+import '../../third/miso_third.dart';
 
 class Miso extends StatefulWidget {
   const Miso({Key? key}) : super(key: key);

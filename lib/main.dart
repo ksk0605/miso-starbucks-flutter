@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:miso_starbucks/miso.dart';
-import 'package:miso_starbucks/starbucks.dart';
+import 'package:miso_starbucks/miso/common/view/miso.dart';
+import 'package:miso_starbucks/starbucks/common/view/starbucks.dart';
 
 void main() {
   runApp(const MyApp());
